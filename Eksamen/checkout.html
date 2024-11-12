@@ -61,11 +61,23 @@
 
                 <label>
                     Adresse:
-                    <input type="text" name="adresse" maxlength="40" required pattern="[A-Za-zæøåÆØÅ ]{2,}">
+                    <input type="text" name="adresse" placeholder="B R A veien 4" maxlength="40" required pattern="[A-Za-zæøåÆØÅ ]{2,}[0-9]">
                 </label>
 
                 <label>
+                    Postnummer:
+                    <input type="text" name="postnummer" placeholder="1757" maxlength="4" required pattern="[0-9]{4}">
+                </label>
+                <label>
+                    Poststed:
+                    <input type="text" name="poststed" placeholder="Halden" maxlength="40" required pattern="[A-Za-zæøåÆØÅ ]{2,}">
+                </label>
 
+                <label>
+                    <input type="submit" value="Lagre">
+                </label>
+                <label>
+                    <input type="submit" value="Avbryt"> 
                 </label>
             </form>
         </section>
