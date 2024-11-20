@@ -33,9 +33,9 @@
     <main>
         <a href="index.html"><i class="fa-solid fa-arrow-left"></i> Fortsett å handle</a>
         <h1>Kasse</h1>
-        <section>
+        <section id="kasse">
             <h2>Shopping bag</h2>
-            <article>
+            <article class="kassekort">
                 <img src="https://picsum.photos/id/435/200/300" alt="nærbilde av et lyse grått kamera">
                 <h3>Produkt navn</h3>
                 <p>4000kr</p>
@@ -45,7 +45,17 @@
                     <li><i class="fa-solid fa-trash-can"></i></li>
                 </ul>
             </article>
-            <article>
+            <article class="kassekort">
+                <img src="https://picsum.photos/id/435/200/300" alt="nærbilde av et lyse grått kamera">
+                <h3>Produkt navn</h3>
+                <p>4000kr</p>
+                <p>Farge: lys grå</p>
+                <ul>
+                    <li><i class="fa-regular fa-heart"></i></li>
+                    <li><i class="fa-solid fa-trash-can"></i></li>
+                </ul>
+            </article>
+            <article class="kassekort">
                 <img src="https://picsum.photos/id/435/200/300" alt="nærbilde av et lyse grått kamera">
                 <h3>Produkt navn</h3>
                 <p>4000kr</p>
@@ -58,7 +68,7 @@
         </section>
         <section>
             <h2>Dine opplysninger</h2>
-            <form>
+            <form id="opplysninger">
                 <label>
                     Fornavn:
                     <input type="text" name="fornavn" placeholder="Nora" maxlength="20" required pattern="[A-Za-zæøåÆØÅ ]{2,}"> 
