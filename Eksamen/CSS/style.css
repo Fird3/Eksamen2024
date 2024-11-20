@@ -111,8 +111,65 @@ main{
 
     #breadcrumbs{
         display: flex;
+        gap: 1rem;
+        list-style: none;
+        padding: 0rem;
+
+        a{
+            text-decoration: none;
+            color: black;
+        }
     }
 
+    section img{
+        width: 100%;
+    
+    }
+
+    #Produktnavn{
+        display: flex;
+        flex-direction: column;
+
+        #handlekurv{
+            border: 1px solid black;
+            padding: 1rem;
+        }
+
+        a{
+            text-transform: uppercase;
+            color: black;
+        }
+
+        .info{
+            display: flex;
+            flex-direction: column;
+            padding: 1rem;
+        }
+
+        form select{
+            padding: 0.5rem;
+            width: 100%;
+        }
+
+        #favoritt-handlekurv    {
+            background-color: rgb(215, 215, 215);
+            width: fit-content;
+            padding: 0.8rem;
+            margin-top: 0.4rem;
+            margin-bottom: 0.5rem;
+            text-transform: none;
+            text-decoration: none;
+        }
+    }
+
+    #relaterteprodukter{
+
+        #produktkort{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+    }
 
 }
 /*#banner{
