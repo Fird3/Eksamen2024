@@ -1,4 +1,40 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
 }
+.logo{
+    font-size: 25px;
 
+}
+
+#header-nav{
+
+    ul{
+        padding: 0rem;
+        list-style: none;
+        display: grid;
+        gap: 0.5rem;
+
+    }
+
+    a{
+        text-decoration: none;
+        color: black;
+        
+    }
+}
+
+#banner{
+    
+    .fake-scroll{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        overflow: scroll;
+        width: 100%;
+    }
+
+    .artikler{
+        background-image: url('/Eksamen/img/blomster.jpg');
+        margin: 1rem;
+    }
+}

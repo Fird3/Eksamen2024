@@ -11,16 +11,15 @@
 </head>
 <body>
     <header>
-        <nav>
+        <nav id="header-nav">
             <form>
-                <label>Søk</label>
-                <input type="search" placeholder="#">
-                <input type="submit" value="søk">
+                <input type="search" placeholder="søk her">
+                <i class="fa-solid fa-magnifying-glass"></i>
             </form>
             <ul>
                 <li><a href="index.html">Hjem</a></li>
                 <li><a href="#Produkter">Produkter</a></li>
-                <li>Logo</li>
+                <li class="logo">Logo</li>
                 <li><a href="#Kategorier">Kategorier</a></li>
                 <li><a href="#Kontaktoss">Kontakt oss</a></li>
             </ul>
@@ -32,23 +31,24 @@
         </nav>
     </header>
     <main>
-        <section>
-            <article>
-                <h1>At vero eos et accusamus et iusto odio</h1>
-                <p>dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
-            <a href="#">Les mer</a>
-            </article>
-            <article>
-                <h2>At vero eos et accusamus et iusto odio</h2>
-                <p>dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
-            <a href="#">Les mer</a>
-            </article>
-            <article>
-                <h2>At vero eos et accusamus et iusto odio</h2>
-                <p>dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
-            <a href="#">Les mer</a>
-            </article>
-
+        <section id="banner">
+            <div class="fake-scroll">
+                <article class="artikler">
+                    <h2>At vero eos et accusamus et iusto odio</h2>
+                    <p>dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias</p>
+                <a href="#">Les mer</a>
+                </article>
+                <article class="artikler">
+                    <h2>At vero eos et accusamus et iusto odio</h2>
+                    <p>dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias</p>
+                <a href="#">Les mer</a>
+                </article>
+                <article class="artikler">
+                    <h2>At vero eos et accusamus et iusto odio</h2>
+                    <p>dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias</p>
+                <a href="#">Les mer</a>
+                </article>
+            </div>
         </section>
         <section>
             <h2 id="Produkter">Våre mest populære produkter</h2>
@@ -215,7 +215,7 @@
     </main>
     <footer>
         <section>
-            <h3>Logo</h3>
+            <h3 class="logo">Logo</h3>
             <p>Sed ut perspiciatis unde omnis iste natus error sit</p>
         </section>
         <section>
