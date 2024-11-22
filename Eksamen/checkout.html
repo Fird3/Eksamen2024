@@ -110,34 +110,40 @@
         </section>
         <section>
             <h2>Levering</h2>
-            <form class="opplysninger">
-                <label>
-                    Ekspress hjemmelevering: 
-                    <input type="radio" name="Levering" required>
-                </label>
-                <p>49 kr <i class="fa-solid fa-truck-fast"></i></p>
-                <p>2-3 Virkedager</p>
-                <p>Bestill før 10:00 å få pakken sendt samme dag som bestillingen. Excepteur sint occaecat cupidatat non proident.</p>
-                <label>
-                    Ekspresslevering til uteleveringssted:
-                    <input type="radio" name="Levering">
-                </label>
-                <p>39 kr <i class="fa-solid fa-truck-fast"></i></p>
-                <p>1-3 Virkedager</p>
-                <p>Bestill før 10:00 å få pakken sendt samme dag som bestillingen. Excepteur sint occaecat cupidatat non proident.</p>
-                <label>
-                    Standard hjemmelevering:
-                    <input type="radio" name="Levering">
-                </label>
-                <p >Gratis <i class="fa-solid fa-truck"></i></p>
-                <p>6-9 Virkedager</p>
-                <p>Bestill før 10:00 å få pakken sendt samme dag som bestillingen. Excepteur sint occaecat cupidatat non proident.</p>
+            <form id="levering">
+                <article class="leveringboks">
+                    <label>
+                        Ekspress hjemmelevering: 
+                        <input type="radio" name="Levering" required>
+                    </label>
+                    <p>49 kr <i class="fa-solid fa-truck-fast"></i></p>
+                    <p>2-3 Virkedager</p>
+                    <p>Bestill før 10:00 å få pakken sendt samme dag som bestillingen. Excepteur sint occaecat cupidatat non proident.</p>
+                </article>
+                <article class="leveringboks">
+                    <label>
+                        Ekspresslevering til uteleveringssted:
+                        <input type="radio" name="Levering">
+                    </label>
+                    <p>39 kr <i class="fa-solid fa-truck-fast"></i></p>
+                    <p>1-3 Virkedager</p>
+                    <p>Bestill før 10:00 å få pakken sendt samme dag som bestillingen. Excepteur sint occaecat cupidatat non proident.</p>
+                </article>
+                <article class="leveringboks">
+                    <label>
+                        Standard hjemmelevering:
+                        <input type="radio" name="Levering">
+                    </label>
+                    <p >Gratis <i class="fa-solid fa-truck"></i></p>
+                    <p>6-9 Virkedager</p>
+                    <p>Bestill før 10:00 å få pakken sendt samme dag som bestillingen. Excepteur sint occaecat cupidatat non proident.</p>
+                </article>
             </form>
         </section>
         <section>
             <h2>Betaling</h2>
             <h3>Kortbetaling <i class="fa-solid fa-credit-card"></i></h3>
-            <form>
+            <form class="opplysninger">
                 <label>
                     Kortnummer:
                     <input type="number" name="kortnummer" placeholder="****************" min="0000000000000000" max="9999999999999999" required>
@@ -155,19 +161,21 @@
                     <input type="submit" value="Fullfør">
                 </label>
             </form>
-            <p>
-                Du bekrefter herved at opplysningene og dokumentene du har oppgitt er korrekte og fullstendige. Leverandøren forbeholder seg retten til å heve eller avslutte avtaleforholdet dersom der foreligger uriktige eller ufullstendinge opplysninger.
-            </p>
-            <form>
-                <label>
-                    Ja, jeg godtar vilkårene
-                    <input type="radio" name="Ja, jeg godtar vilkårene" required>
-                </label>
-                <label>
-                    Ja takk! Send nyhetsbrev til meg
-                    <input type="radio" name="Ja takk! send nyhetsbrev til meg">
-                </label>
-            </form>
+            <article id="godkjenning">
+                <p>
+                    Du bekrefter herved at opplysningene og dokumentene du har oppgitt er korrekte og fullstendige. Leverandøren forbeholder seg retten til å heve eller avslutte avtaleforholdet dersom der foreligger uriktige eller ufullstendinge opplysninger.
+                </p>
+                <form>
+                    <label class="godkjennknapp">
+                        Ja, jeg godtar vilkårene
+                        <input type="radio" name="Ja, jeg godtar vilkårene" required>
+                    </label>
+                    <label class="godkjennknapp">
+                        Ja takk! Send nyhetsbrev til meg
+                        <input type="radio" name="Ja takk! send nyhetsbrev til meg">
+                    </label>
+                </form>
+            </article>
         </section>
 
     </main>
