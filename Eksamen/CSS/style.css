@@ -63,9 +63,6 @@ main{
             }
         }
 
-        article img{
-            width: 100%;
-        }
 
         .favoritt-bilde{
             position: absolute;
@@ -123,11 +120,9 @@ main{
         }
     }
 
-    section img{
+    .produktbilder{
         width: 100%;
-    
     }
-
     #Produktnavn{
         display: flex;
         flex-direction: column;
@@ -153,7 +148,7 @@ main{
             width: 100%;
         }
 
-        #favoritt-handlekurv    {
+        .favoritt-handlekurv    {
             background-color: rgb(215, 215, 215);
             width: fit-content;
             padding: 0.8rem;
@@ -262,6 +257,35 @@ footer{
             flex-direction: row;
             margin: 0px;
             padding: 1rem;
+        }
+    }
+    main{
+        #produkter{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            h2{
+                display: flex;
+                width: 100%;
+                justify-content: center;
+            }
+
+            .artikel-kort{
+                margin-left: 1rem;
+                margin-right: 1rem;
+                max-width: 350px;
+                width: 300px;
+                
+                .produktbilder{
+                    border-radius: 20px;
+                }
+            }
+
+            #flex-knapp{
+                width: 100%;
+            }
         }
     }
 
