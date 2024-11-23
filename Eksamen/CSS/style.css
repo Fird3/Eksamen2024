@@ -12,7 +12,8 @@ body{
     ul{
         padding: 0rem;
         list-style: none;
-        display: grid;
+        display: flex;
+        flex-direction: column;
         gap: 0.8rem;
     }
 
@@ -223,24 +224,13 @@ main{
         display: flex;
         flex-direction: column;
         gap: 1rem;
+
+        .godkjennknapp{
+            display: flex;
+        }
     }
 
 }
-/*#banner{
-    
-    .fake-scroll{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        overflow: scroll;
-        width: 100%;
-    }
-
-    .artikler{
-        background-image: url('../img/blomster.jpg');
-        margin: 1rem;
-    }
-}*/
 
 footer{
     padding: 1rem;
@@ -261,3 +251,51 @@ footer{
         }
     }
 }
+
+/*desktop*/
+@media only screen and (min-width:800px){
+    #header-nav{
+        display: flex;
+        justify-content: space-between;
+
+        ul{
+            flex-direction: row;
+            margin: 0px;
+            padding: 1rem;
+        }
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        #footerlogo{
+            width: 100%;
+        }
+        #footersection{
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+
+            #sosialemedier{
+                flex-direction: row;
+                justify-content: space-evenly;
+            }
+        }
+    }
+}
+
+/*#banner{
+    
+    .fake-scroll{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        overflow: scroll;
+        width: 100%;
+    }
+
+    .artikler{
+        background-image: url('../img/blomster.jpg');
+        margin: 1rem;
+    }
+}*/
