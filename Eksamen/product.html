@@ -37,111 +37,154 @@
                 <li><a href="#">Kategori</a> <i class="fa-solid fa-chevron-right"></i></li>
                 <li><a href="#">Produktnavn</a></li>
             </ul>
-            <section>
-                <img src="https://picsum.photos/id/435/200" alt="nærbilde av et lyse grått kamera" class="produktbilder">
-                <img src="https://picsum.photos/id/435/200" alt="nærbilde av et lyse grått kamera" class="produktbilder">
-                <img src="https://picsum.photos/id/435/200" alt="nærbilde av et lyse grått kamera" class="produktbilder">
-                <img src="https://picsum.photos/id/435/200" alt="nærbilde av et lyse grått kamera" class="produktbilder">
-            </section>
-            <section id="Produktnavn">
-                <h2>Produktnavn</h2>
-                <a href="#">Merkenavn</a>
-                <p>4000kr</p>
-                <p>Farge: lys grå</p>
-                <form>
-                    <select name="Størrelse" required>
-                        <option value="">Størrelse</option>
-                        <option value="XS">XS</option>
-                        <option value="S">S</option>
-                        <option value="M">M</option>
-                        <option value="L">L</option>
-                        <option value="XL">XL</option>
-                    </select>
-                </form>
-                <a href="#" class="favoritt-handlekurv">Legg til i handlekurv</a>
-                <a href="#" class="favoritt-handlekurv"> <i class="fa-solid fa-heart"></i> </a>
-                <article class="info">
-                    <details>
-                        <summary>Materiale og vedlikehold</summary>
-                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                    </details>
+            <section id="produktgrid">
+                <article id="gruppebilde">
+                    <img src="https://picsum.photos/id/435/200" alt="nærbilde av et lyse grått kamera" id="bilde1">
+                    <img src="https://picsum.photos/id/435/200" alt="nærbilde av et lyse grått kamera" id="bilde2">
+                    <img src="https://picsum.photos/id/435/200" alt="nærbilde av et lyse grått kamera" id="bilde3">
+                    <img src="https://picsum.photos/id/435/200" alt="nærbilde av et lyse grått kamera" id="bilde4">
                 </article>
-                <article class="info">
-                    <details>
-                        <summary>Produktdetaljer</summary>
-                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                    </details>
-                </article>
-                <article class="info">
-                    <details>
-                        <summary>Størrelse tabell</summary>
-                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                    </details>
-                </article>
-                <article class="info">
-                    <details>
-                        <summary>Anmeldelser</summary>
-                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                    </details>
-                </article>
+                <section id="Produktnavn">
+                    <h2>Produktnavn</h2>
+                    <a href="#">Merkenavn</a>
+                    <p>4000kr</p>
+                    <p>Farge: lys grå</p>
+                    <form>
+                        <select name="Størrelse" required>
+                            <option value="">Størrelse</option>
+                            <option value="XS">XS</option>
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                        </select>
+                    </form>
+                    <a href="#" class="favoritt-handlekurv">Legg til i handlekurv</a>
+                    <a href="#" class="favoritt-handlekurv"> <i class="fa-solid fa-heart"></i> </a>
+                    <article class="info">
+                        <details>
+                            <summary>Materiale og vedlikehold</summary>
+                            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                        </details>
+                    </article>
+                    <article class="info">
+                        <details>
+                            <summary>Produktdetaljer</summary>
+                            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                        </details>
+                    </article>
+                    <article class="info">
+                        <details>
+                            <summary>Størrelse tabell</summary>
+                            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                        </details>
+                    </article>
+                    <article class="info">
+                        <details>
+                            <summary>Anmeldelser</summary>
+                            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                        </details>
+                    </article>
+                </section>
             </section>
             <section id="relaterteprodukter">
                 <h2>Relaterte produkter</h2>
-                <article>
-                    <a href="#" >Se flere lignende produkter<i class="fa-solid fa-arrow-right"></i></a>
-                </article>
-                <article class="produktkort">
-                    <img src="https://picsum.photos/id/454/200" alt="nærbilde av noen som holder et svart kamera" class="produktbilder">
-                    <h3>Produktnavn</h3>
-                    <p>4000 kr</p>
-                    <a>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star-half-stroke"></i>
-                    </a>
-                    <p>123 anmeldelser</p>
-                </article>
-                <article class="produktkort">
-                    <img src="https://picsum.photos/id/454/200" alt="nærbilde av noen som holder et svart kamera" class="produktbilder">
-                    <h3>Produktnavn</h3>
-                    <p>4000 kr</p>
-                    <a>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star-half-stroke"></i>
-                    </a>
-                    <p>123 anmeldelser</p>
-                </article>
-                <article class="produktkort">
-                    <img src="https://picsum.photos/id/454/200" alt="nærbilde av noen som holder et svart kamera" class="produktbilder">
-                    <h3>Produktnavn</h3>
-                    <p>4000 kr</p>
-                    <a>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star-half-stroke"></i>
-                    </a>
-                    <p>123 anmeldelser</p>
-                </article>
-                <article class="produktkort">
-                    <img src="https://picsum.photos/id/454/200" alt="nærbilde av noen som holder et svart kamera"  class="produktbilder">
-                    <h3>Produktnavn</h3>
-                    <p>4000 kr</p>
-                    <a>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star-half-stroke"></i>
-                    </a>
-                    <p>123 anmeldelser</p>
-                </article>
+                    <article>
+                        <a href="#" >Se flere lignende produkter<i class="fa-solid fa-arrow-right"></i></a>
+                    </article>
+                <div id="scroll-container">
+                    <article class="produktkort">
+                        <img src="https://picsum.photos/id/454/200" alt="nærbilde av noen som holder et svart kamera" class="produktbilder">
+                        <h3>Produktnavn</h3>
+                        <p>4000 kr</p>
+                        <a>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </a>
+                        <p>123 anmeldelser</p>
+                    </article>
+                    <article class="produktkort">
+                        <img src="https://picsum.photos/id/454/200" alt="nærbilde av noen som holder et svart kamera" class="produktbilder">
+                        <h3>Produktnavn</h3>
+                        <p>4000 kr</p>
+                        <a>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </a>
+                        <p>123 anmeldelser</p>
+                    </article>
+                    <article class="produktkort">
+                        <img src="https://picsum.photos/id/454/200" alt="nærbilde av noen som holder et svart kamera" class="produktbilder">
+                        <h3>Produktnavn</h3>
+                        <p>4000 kr</p>
+                        <a>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </a>
+                        <p>123 anmeldelser</p>
+                    </article>
+                    <article class="produktkort">
+                        <img src="https://picsum.photos/id/454/200" alt="nærbilde av noen som holder et svart kamera"  class="produktbilder">
+                        <h3>Produktnavn</h3>
+                        <p>4000 kr</p>
+                        <a>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </a>
+                        <p>123 anmeldelser</p>
+                    </article>
+                    <article class="produktkort">
+                        <img src="https://picsum.photos/id/454/200" alt="nærbilde av noen som holder et svart kamera" class="produktbilder">
+                        <h3>Produktnavn</h3>
+                        <p>4000 kr</p>
+                        <a>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </a>
+                        <p>123 anmeldelser</p>
+                    </article>
+                    <article class="produktkort">
+                        <img src="https://picsum.photos/id/454/200" alt="nærbilde av noen som holder et svart kamera" class="produktbilder">
+                        <h3>Produktnavn</h3>
+                        <p>4000 kr</p>
+                        <a>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </a>
+                        <p>123 anmeldelser</p>
+                    </article>
+                    <article class="produktkort">
+                        <img src="https://picsum.photos/id/454/200" alt="nærbilde av noen som holder et svart kamera" class="produktbilder">
+                        <h3>Produktnavn</h3>
+                        <p>4000 kr</p>
+                        <a>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </a>
+                        <p>123 anmeldelser</p>
+                    </article>
+                </div>
             </section>
         </main>
         <footer>
