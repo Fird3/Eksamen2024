@@ -38,12 +38,14 @@
                 <li><a href="#">Produktnavn</a></li>
             </ul>
             <section id="produktgrid">
-                <article id="gruppebilde">
-                    <img src="https://picsum.photos/id/435/200" alt="nærbilde av et lyse grått kamera" id="bilde1">
-                    <img src="https://picsum.photos/id/435/200" alt="nærbilde av et lyse grått kamera" id="bilde2">
-                    <img src="https://picsum.photos/id/435/200" alt="nærbilde av et lyse grått kamera" id="bilde3">
-                    <img src="https://picsum.photos/id/435/200" alt="nærbilde av et lyse grått kamera" id="bilde4">
-                </article>
+                    <article id="gruppebilde">
+                        <div id="grid-bilde">
+                            <img src="https://picsum.photos/id/435/200" alt="nærbilde av et lyse grått kamera" id="bilde1">
+                            <img src="https://picsum.photos/id/435/200" alt="nærbilde av et lyse grått kamera" id="bilde2">
+                            <img src="https://picsum.photos/id/435/200" alt="nærbilde av et lyse grått kamera" id="bilde3">
+                            <img src="https://picsum.photos/id/435/200" alt="nærbilde av et lyse grått kamera" id="bilde4">
+                        </div>
+                    </article>
                 <section id="Produktnavn">
                     <h2>Produktnavn</h2>
                     <a href="#">Merkenavn</a>
@@ -51,7 +53,7 @@
                     <p>Farge: lys grå</p>
                     <form>
                         <select name="Størrelse" required>
-                            <option value="">Størrelse</option>
+                            <option value="">Velg størrelse</option>
                             <option value="XS">XS</option>
                             <option value="S">S</option>
                             <option value="M">M</option>
@@ -59,8 +61,14 @@
                             <option value="XL">XL</option>
                         </select>
                     </form>
-                    <a href="#" class="favoritt-handlekurv">Legg til i handlekurv</a>
-                    <a href="#" class="favoritt-handlekurv"> <i class="fa-solid fa-heart"></i> </a>
+                    <section id="handlekurv-favoritt">
+                        <article id="handlekurv">
+                            <a href="#" >Legg til i handlekurv</a>
+                        </article>
+                        <article id="favoritt">
+                            <a href="#"> <i class="fa-solid fa-heart"></i> </a>
+                        </article>
+                    </section>
                     <article class="info">
                         <details>
                             <summary>Materiale og vedlikehold</summary>

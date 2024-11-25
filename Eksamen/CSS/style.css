@@ -73,13 +73,6 @@ main{
         }
 
     }
-/*
-    #Kategorier{
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-    }
-        */
 
     #anmeldelser{
         display: flex;
@@ -113,9 +106,7 @@ main{
         }
     }
 
-    .produktbilder{
-        width: 100%;
-    }
+
 
     #bilde1, #bilde2, #bilde3, #bilde4, #bilde5{
         width: 100%;
@@ -123,11 +114,6 @@ main{
     #Produktnavn{
         display: flex;
         flex-direction: column;
-
-        #handlekurv{
-            border: 1px solid black;
-            padding: 1rem;
-        }
 
         a{
             text-transform: uppercase;
@@ -138,22 +124,41 @@ main{
             display: flex;
             flex-direction: column;
             padding: 1rem;
+            border-top: 1px solid black;
+            margin-bottom: 1rem;
         }
 
         form select{
-            padding: 0.5rem;
+            padding: 1rem;
             width: 100%;
         }
-
-        .favoritt-handlekurv    {
-            background-color: rgb(215, 215, 215);
-            width: fit-content;
+    }
+    #handlekurv-favoritt{
+        display: flex;
+        gap: 1rem;
+        #favoritt{
             padding: 0.8rem;
             margin-top: 0.4rem;
             margin-bottom: 0.5rem;
-            text-transform: none;
-            text-decoration: none;
+            width: fit-content;
+            border: 1px solid black;
         }
+        #handlekurv{
+            display: flex;
+            justify-content: center;
+            width: 90%;
+            padding: 0.8rem;
+            margin-top: 0.4rem;
+            margin-bottom: 0.5rem;
+            background-color: black;
+
+            a{
+                color: white;
+                text-decoration: none;
+                text-transform: none;
+            }
+        }
+        
     }
 
     #relaterteprodukter{
@@ -163,6 +168,7 @@ main{
             display: flex;
             flex-direction: column;
         }
+
     }
 
     /*kasse*/
@@ -265,6 +271,9 @@ footer{
         grid-column: 1/2;
         grid-row: 3/4;
     }
+    .produktbilder{
+        width: 100%;
+    }
 }
 /*desktop*/
 @media only screen and (min-width:800px){
@@ -320,6 +329,7 @@ footer{
                 
                 .produktbilder{
                     border-radius: 20px;
+                    width: 100%;
                 }
             }
 
@@ -419,13 +429,35 @@ footer{
         grid-column: 2/3;
         grid-row: 1/2;
     }
+    
+
+    #grid-bilde{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        gap: 1rem;
+
+        #bilde1{
+            grid-column: 1/4;
+            grid-row: 1/4;
+        }
+        #bilde2{
+            grid-column: 1/2;
+            grid-row: 4/5;
+        }
+        #bilde3{
+            grid-column: 2/3;
+            grid-row: 4/5;
+        }
+        #bilde4{
+            grid-column: 3/4;
+            grid-row: 4/5;
+        }
+    }
 
     
-}
-#relaterteprodukter{
-    .produktkort{
-        max-width: 289px;
-    }
 }
 
 
