@@ -368,6 +368,22 @@ footer{
                 padding: 1rem;
             }
         }
+
+        .bannerpiler{
+            display: flex;
+            position: absolute;
+            justify-content: space-evenly;
+        }
+        .bannerpil{
+            position: absolute;
+            padding: 0.5rem;
+            background-color:rgba(215,215,215,0.5);
+            border-radius: 50px;
+            margin-left: 26rem;
+            margin-right: 82rem;
+            margin-top: 5rem;
+            
+        }
     }
 
 
