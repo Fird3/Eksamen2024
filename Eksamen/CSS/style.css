@@ -1,6 +1,8 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     margin: 1rem;
+    max-width: 1200px;
+    align-items: center;
 }
 .logo{
     font-size: 25px;
@@ -217,9 +219,7 @@ main{
             display: flex;
             flex-direction: column;
 
-            img{
-                width: 250px;
-            }
+
             
             ul{
                 list-style: none;
@@ -382,6 +382,7 @@ footer{
             justify-content: center;
             align-items: center;
             margin: 1rem;
+            background-position: center;
 
         }
     }
@@ -579,6 +580,10 @@ footer{
             width: 1200px;
             gap: 1rem;
             margin-top: 1rem;
+            
+            img{
+                width: 250px;
+            }
         }
         #anmeldelser{
 
@@ -635,6 +640,11 @@ footer{
 
 
 }
+#seflereprodukter{
+    display: flex;
+    justify-content: right;
+
+}
 
 
 
@@ -660,6 +670,22 @@ footer{
             }
 
         }
+        .formliste{
+            display: flex;
+            flex-direction: row;
+            margin-top: 5rem;
+
+            li form{
+                select{
+                    padding: 0.4rem;
+                }
+                input{
+                    padding: 0.4rem;
+                }
+            }
+
+        }
+
     }
 }
 
