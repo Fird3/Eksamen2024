@@ -2,7 +2,6 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     margin: 1rem;
     max-width: 1200px;
-    align-items: center;
 }
 .logo{
     font-size: 25px;
@@ -577,7 +576,7 @@ footer{
             flex-direction: row;
             overflow: scroll;
             flex-wrap: nowrap;
-            width: 1200px;
+            width: 1000px;
             gap: 1rem;
             margin-top: 1rem;
             
@@ -602,15 +601,20 @@ footer{
     grid-template-rows: 1fr;
 
 
-    .gruppebilde{
-        grid-column: 1/2;
-        grid-row: 1/2;
-    }
-    #produktnavn{
-        grid-column: 2/3;
-        grid-row: 1/2;
-    }
 
+    #Produktnavn{
+        min-width: 400px;
+    }
+#scrollprodukt{
+    display: flex;
+            flex-direction: row;
+            overflow: scroll;
+            flex-wrap: nowrap;
+            width: 400px;
+            gap: 4rem;
+            height: 570px;
+
+}
 
     #grid-bilde{
         display: grid;
