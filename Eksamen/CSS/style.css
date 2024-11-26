@@ -70,6 +70,16 @@ main{
                 color: black;
                 text-decoration: none;
             }
+            ul{
+                list-style: none;
+                padding: 0;
+                display: flex;
+                justify-content: space-between;
+
+                h3{
+                    margin: 0;
+                }
+            }
         }
 
 
@@ -81,6 +91,35 @@ main{
             margin: 0.5rem;
         }
 
+    }
+
+    #kategorier{
+
+        #kategori1{
+            background-image: url(../img/kveps.jpg);
+            /*Image by <a href="https://pixabay.com/users/ralf1403-21380246/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8916137">Ralf Ruppert</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8916137">Pixabay</a>*/
+        }
+
+        #kategori2{
+            background-image: url(../img/blomsterbok.jpg);
+            /*Image by <a href="https://pixabay.com/users/gosiak1980-2374509/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=9115519">Gosia K.</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=9115519">Pixabay</a>*/
+        }
+
+        #kategori3{
+            background-image: url(../img/sommerfugl.jpg);
+            /*Image by <a href="https://pixabay.com/users/iupac-35785262/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8577624">Iupac</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8577624">Pixabay</a>*/
+        }
+
+        #kategori4{
+            background-image: url(../img/katt.jpg);
+            /*Image by <a href="https://pixabay.com/users/birgl-6508325/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8364405">Birgit</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8364405">Pixabay</a>*/  
+            
+        }
+
+        #kategori5{
+            background-image: url(../img/fugl.jpg);
+            /*Image by <a href="https://pixabay.com/users/netti_nu_nu-21673442/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8636733">Aneta Rog</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8636733">Pixabay</a>*/
+        }
     }
 
     #anmeldelser{
@@ -115,8 +154,6 @@ main{
         }
     }
 
-
-
     #bilde1, #bilde2, #bilde3, #bilde4, #bilde5{
         width: 100%;
     }
@@ -135,6 +172,11 @@ main{
             padding: 1rem;
             border-top: 1px solid black;
             margin-bottom: 1rem;
+
+            details summary{
+                display: flex;
+                justify-content: space-between;
+            }
         }
 
         form select{
@@ -167,18 +209,33 @@ main{
                 text-transform: none;
             }
         }
-        
     }
 
-    #relaterteprodukter{
-
-        #produktkort{
+    #scroll-container{
+        .produktkort{
             width: 100%;
             display: flex;
             flex-direction: column;
-        }
 
+            img{
+                width: 250px;
+            }
+            
+            ul{
+                list-style: none;
+                display: flex;
+                justify-content: space-between;
+                padding: 0;
+
+                h3{
+                    margin: 0;
+                }
+            }
+        }
     }
+
+
+ 
 
     /*kasse*/
 
@@ -206,11 +263,27 @@ main{
         flex-direction: column;
         gap: 1rem;
 
+
         .leveringboks{
             display: flex;
             flex-direction: column;
             border: 1px solid rgb(215, 215, 215);
             padding: 1rem;
+
+            .postbil{
+                display: flex;
+                justify-content: space-between;
+            }
+
+            ul{
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+
+            .virkedager{
+                color: rgb(95, 95, 95);
+            }
     }
 
     }
@@ -300,8 +373,19 @@ footer{
 
     main{
         grid-column: 1/2;
-        grid-row: 2/3;   
+        grid-row: 2/3; 
+        
+        #kategori1, #kategori2, #kategori3, #kategori4, #kategori5{
+            height: 200px;
+            border-radius: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 1rem;
+
+        }
     }
+
 
     footer{
         grid-column: 1/2;
@@ -458,57 +542,49 @@ footer{
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                background-position: center;
             }    
     
-            #kategori1{
-                background-image: url(../img/kveps.jpg);
-                /*Image by <a href="https://pixabay.com/users/ralf1403-21380246/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8916137">Ralf Ruppert</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8916137">Pixabay</a>*/
+            #kategori1{           
                 grid-column: 1/2;
                 grid-row: 1/2;
             }
     
-            #kategori2{
-                background-image: url(../img/blomsterbok.jpg);
-                /*Image by <a href="https://pixabay.com/users/gosiak1980-2374509/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=9115519">Gosia K.</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=9115519">Pixabay</a>*/
+            #kategori2{         
                 grid-column: 2/3;
                 grid-row: 1/2; 
             }
     
             #kategori3{
-                background-image: url(../img/sommerfugl.jpg);
-                /*Image by <a href="https://pixabay.com/users/iupac-35785262/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8577624">Iupac</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8577624">Pixabay</a>*/
                 grid-column: 3/4;
                 grid-row: 1/3; 
             }
     
             #kategori4{
-                background-image: url(../img/katt.jpg);
-                /*Image by <a href="https://pixabay.com/users/birgl-6508325/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8364405">Birgit</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8364405">Pixabay</a>*/
                 grid-column: 1/3;
                 grid-row: 2/4;   
             }
     
             #kategori5{
-                background-image: url(../img/fugl.jpg);
-                /*Image by <a href="https://pixabay.com/users/netti_nu_nu-21673442/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8636733">Aneta Rog</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8636733">Pixabay</a>*/
                 grid-column: 3/4;
                 grid-row: 3/4;
             }
         }
 
+        #scroll-container{
+            display: flex;
+            flex-direction: row;
+            overflow: scroll;
+            flex-wrap: nowrap;
+            width: 1200px;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
         #anmeldelser{
 
             .anmeldelser-kort{
                 max-width: 289px;
                 min-width: 250px;
-            }
-            #scroll-container{
-                display: flex;
-                flex-direction: row;
-                overflow: scroll;
-                flex-wrap: nowrap;
-                width: 1200px;
-                gap: 1rem;
             }
         }
     }
@@ -534,30 +610,35 @@ footer{
     #grid-bilde{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
         padding-left: 3rem;
         padding-right: 3rem;
         gap: 1rem;
 
         #bilde1{
-            grid-column: 1/4;
+            grid-column: 2/4;
             grid-row: 1/4;
         }
         #bilde2{
             grid-column: 1/2;
-            grid-row: 4/5;
+            grid-row: 1/2;
         }
         #bilde3{
-            grid-column: 2/3;
-            grid-row: 4/5;
+            grid-column: 1/2;
+            grid-row: 2/3;
         }
         #bilde4{
-            grid-column: 3/4;
-            grid-row: 4/5;
+            grid-column: 1/2;
+            grid-row: 3/4;
         }
     }
 
+
 }
+
+
+
+/*checkout*/
 #kasse{
     display: flex;
     flex-direction: column;
