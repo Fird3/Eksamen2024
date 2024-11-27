@@ -9,21 +9,7 @@ body{
 }
 
 
-#header-nav{
 
-    ul{
-        padding: 0rem;
-        list-style: none;
-        display: flex;
-        flex-direction: column;
-        gap: 0.8rem;
-    }
-
-    a{
-        text-decoration: none;
-        color: black;
-    }
-}
 
 
 main{
@@ -138,6 +124,7 @@ main{
             padding: 1rem;
             border-radius: 20px;
             text-align: left;
+            margin: 1rem;
         }
     }
 
@@ -240,9 +227,31 @@ main{
 
     #kasse{
         text-align: left;
+        .kasseikon{
+            list-style: none;
+            gap: 1rem;
+            display: flex;
 
-        .kassekort{
-            ul{
+        }
+
+     
+            .formliste{
+                display: flex;
+                flex-direction: row;
+                list-style: none;
+                gap: 1rem;
+        
+            }
+            li form{
+                select{
+                    padding: 0.4rem;
+            
+                }
+                input{
+                    padding: 0.4rem;
+                }
+            }
+            .kasseliste{
                 list-style: none;
                 padding: 0rem;
                 display: flex;
@@ -325,7 +334,7 @@ main{
         }
     }
 
-}
+
 
 footer{
     padding: 1rem;
@@ -358,6 +367,41 @@ footer{
         grid-column: 1/2;
         grid-row: 1/2;
     }
+    #header-nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        form{
+            padding: 0.5rem;
+        }
+        #ulikon{
+            display: flex;
+            flex-direction: row;
+        }
+    
+        ul{
+            display: flex;
+            flex-direction: column;
+            list-style: none;
+            align-items: center;
+            padding: 0.5rem;
+            gap: 1rem;
+    
+    
+            a{
+                color: black;
+                text-decoration: none;
+            }
+        }
+
+       
+    
+    
+    }
+    .formliste{
+        padding: 0rem;
+    }
 
     #bannerartikel{
         background-image: url(../img/blomster.jpg);
@@ -373,8 +417,9 @@ footer{
     main{
         grid-column: 1/2;
         grid-row: 2/3; 
+
         
-        #kategori1, #kategori2, #kategori3, #kategori4, #kategori5{
+        #kategori1, #kategori2, #kategori4, #kategori5{
             height: 200px;
             border-radius: 30px;
             display: flex;
@@ -383,6 +428,16 @@ footer{
             margin: 1rem;
             background-position: center;
 
+        }
+
+        #kategori3{
+            height: 300px;
+            border-radius: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 1rem;
+            background-position: center;
         }
     }
 
@@ -410,6 +465,9 @@ footer{
                 width: 100%;
             }
         }
+        .kasseikon{
+            padding: 0rem;
+        }
     }
 
     
@@ -420,6 +478,30 @@ footer{
     #grid-container{
         display: grid;
         grid-template-columns: 0.5fr 3fr 0.5fr;
+    }
+    #header-nav{
+        form{
+            padding: 0rem;
+            margin: 1rem;
+    
+        }
+    
+        ul{
+            padding: 0rem;
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+            margin: 1rem;
+            padding: 0rem;
+    
+            a{
+                text-decoration: none;
+                color: black;
+                
+            }
+        }
+    
     }
 
     #bannerartikel{
@@ -665,6 +747,14 @@ footer{
         gap: 1rem;
         .kasseikon{
             text-align: right;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .formliste{
+            margin-top: 5rem;
+            
         }
 
         .kasseliste{
@@ -674,21 +764,7 @@ footer{
             }
 
         }
-        .formliste{
-            display: flex;
-            flex-direction: row;
-            margin-top: 5rem;
 
-            li form{
-                select{
-                    padding: 0.4rem;
-                }
-                input{
-                    padding: 0.4rem;
-                }
-            }
-
-        }
 
     }
 }
