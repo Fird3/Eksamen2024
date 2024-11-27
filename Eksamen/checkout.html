@@ -14,7 +14,7 @@
         <header>
             <nav id="header-nav">
                 <form>
-                    <input type="search" placeholder="søk her">
+                    <input type="search" placeholder="søk her" aria-label="søk her">
                     <input type="submit" value="søk">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </form>
@@ -144,14 +144,15 @@
                 </article>
             </section>
             <section class="checkoutseksjon">
-                <h2>Dine opplysninger</h2>
-                <h5>Fyll inn feltene under med opplysningene som passer i de forskjellige feltene under</h5>
-                <article>
+                <ul class="ulopplys">
+                    <li><h2>Dine opplysninger</h2></li>
+                    <li><h5>Fyll inn feltene under med opplysningene som passer i de forskjellige feltene under</h5></li>
+                </ul>
                     <h3>Leveringsadresse</h3>
                     <form class="opplysninger">
                         <label id="fornavn">
                             Fornavn:
-                            <input type="text" name="fornavn" placeholder="Nora" maxlength="20" required pattern="[A-Za-zæøåÆØÅ ]{2,}"> 
+                            <input type="text" name="fornavn" placeholder="Nora" maxlength="20" pattern="[A-Za-zæøåÆØÅ ]{2,}" required> 
                         </label>
                         <label id="etternavn">
                             Etternavn:
@@ -169,12 +170,11 @@
                             Poststed:
                             <input type="text" name="poststed" placeholder="Halden" maxlength="40" required pattern="[A-Za-zæøåÆØÅ ]{2,}">
                         </label>
-                    </form>
-                </article>
-                <article>
-                    <h3>Kontaktinformasjon</h3>
-                    <h5>Fyll inn feltene under med riktig Kontaktinformasjon</h5>
-                    <form class="opplysninger">
+                        <ul class="ulopplys">
+                            <li><h3>Kontaktinformasjon</h3></li>
+                            <li><h5>Fyll inn feltene under med riktig Kontaktinformasjon</h5></li>
+                        </ul>
+                    
                         <label id="epost">
                             E-post:
                             <input type="email" name="epost" placeholder="eksempel@hiof.no" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$">
@@ -183,10 +183,6 @@
                             Telefonnummer:
                             <input type="tel" name="telefonnummer" placeholder="123456789" pattern="[0-9]{8,12}" required>
                         </label>
-                    </form>
-                </article>
-                <article>
-                    <form>
                         <label class="lagre">
                             <input type="submit" value="Lagre">
                         </label>
@@ -194,11 +190,12 @@
                             <input type="reset" value="Avbryt"> 
                         </label>
                     </form>
-                </article>
             </section>
             <section class="checkoutseksjon">
-                <h2>Levering</h2>
-                <h5>Velg leveringstypne du ønsker</h5>
+                <ul class="ulopplys">
+                    <li><h2>Levering</h2></li>
+                    <li><h5>Velg leveringstypen du ønsker</h5></li>
+                </ul>
                 <form id="levering">
                     <article class="leveringboks">
                         <ul class="postbil">
@@ -254,7 +251,10 @@
                 </form>
             </section>
             <section class="checkoutseksjon">
-                <h2>Betaling</h2>
+                <ul class="ulopplys">
+                    <li><h2>Betaling</h2></li>
+                    <li><h5>Fyll inn de forskjellige feltene under med din kortinformasjon</h5></li>
+                </ul>
                 <h3>Kortbetaling <i class="fa-solid fa-credit-card"></i></h3>
                 <article>
                     <form class="opplysninger">
@@ -270,16 +270,10 @@
                             CVC/CVV:
                             <input type="number" name="CVC/CVV" placeholder="***" min="000" max="999" required>
                         </label>
-                    </form> 
-                </article>
-                <article>
                     <ul id="sluttsum">
                         <li><h4>Å betale inkl. mva</h4></li>
                         <li>4000kr</li>
                     </ul>
-                </article>
-                <article>
-                    <form>
                         <label class="lagre">
                             <input type="submit" value="Fullfør">
                         </label>
