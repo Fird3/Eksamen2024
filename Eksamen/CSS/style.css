@@ -225,6 +225,13 @@ main{
 
     /*kasse*/
 
+    .checkoutseksjon{
+        display: flex;
+        flex-direction: column;
+        margin: 1rem;
+        border: 1px solid rgb(215, 215, 215);
+    }
+
     #kasse{
         text-align: left;
         .kasseikon{
@@ -297,6 +304,7 @@ main{
     }
     .opplysninger{
         gap: 1rem;
+        margin-bottom: 1rem;
 
         input{
             width: 100%;
@@ -439,6 +447,10 @@ footer{
             margin: 1rem;
             background-position: center;
         }
+    }
+
+    .checkoutseksjon{
+        padding: 1rem;
     }
 
 
@@ -735,6 +747,10 @@ footer{
 
 
 /*checkout*/
+
+.checkoutseksjon{
+    padding: 1rem 10rem 1rem 10rem;
+}
 #kasse{
     display: flex;
     flex-direction: column;
@@ -769,17 +785,10 @@ footer{
     }
 }
 
-.checkoutseksjon{
-    display: flex;
-    flex-direction: column;
-    margin: 1rem;
-    border: 1px solid rgb(215, 215, 215);
-    padding: 1rem 10rem 1rem 10rem;
-}
+
 .opplysninger{
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 1rem;
     #fornavn{
         width: 48%;
     }
