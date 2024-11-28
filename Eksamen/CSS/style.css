@@ -1,7 +1,12 @@
+html{
+    display: flex;
+    justify-content: center;
+    max-width: 1200px;
+}
+
 body{
     font-family: Arial, Helvetica, sans-serif;
     margin: 1rem;
-    max-width: 1200px;
     a{
         font-family: Georgia, 'Times New Roman', Times, serif;
     }
@@ -361,6 +366,13 @@ main{
         }
     }
 
+#ogbetale{
+    font-weight: lighter;
+}
+#pris{
+    font-size: 35px;
+    font-weight: bolder;
+}
 
 
 footer{
