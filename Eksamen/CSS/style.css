@@ -450,9 +450,10 @@ footer{
             }
         }
 
-       
+    }
     
-    
+    #bilde1, #bilde2, #bilde3, #bilde4, #bilde5{
+        max-height: 343px;
     }
     .formliste{
         padding: 0rem;
