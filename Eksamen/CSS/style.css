@@ -40,6 +40,8 @@ main{
         padding: 0.8rem;
         border: 1px solid black;
         border-radius: 20px;
+        color: black;
+        text-decoration: none;
 
     }
 
@@ -369,6 +371,14 @@ main{
 #ogbetale{
     font-weight: lighter;
 }
+#sluttsum{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0rem;
+}
 #pris{
     font-size: 35px;
     font-weight: bolder;
@@ -381,7 +391,6 @@ footer{
 
     #sosialemedier{
         flex-direction: row;
-        justify-content: space-evenly;
     }
 
     section article ul{
@@ -417,7 +426,9 @@ footer{
         align-items: center;
     
         form{
+            display: flex;
             padding: 0.5rem;
+            gap: 1rem;
         }
         #ulikon{
             display: flex;
@@ -490,12 +501,6 @@ footer{
     }
 
 
-    footer{
-        grid-column: 1/2;
-        grid-row: 3/4;
-    }
-
-
     .produktbilder{
         width: 100%;
     }
@@ -516,6 +521,12 @@ footer{
         .kasseikon{
             padding: 0rem;
         }
+    }
+    footer{
+        grid-column: 1/2;
+        grid-row: 3/4;
+
+       
     }
 
     
@@ -843,14 +854,6 @@ footer{
 
 }
 
-#sluttsum{
-    width: 100%;
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0rem;
-}
 #godkjenning{
     form{
         display: flex;
@@ -863,6 +866,10 @@ footer{
         grid-row: 3/4;
         display: flex;
         flex-direction: column;
+
+        #sosialemedier{
+            justify-content: space-evenly;
+        }
         #footerlogo{
             width: 100%;
         }
