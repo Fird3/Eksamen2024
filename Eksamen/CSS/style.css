@@ -255,7 +255,9 @@ main{
         
 
     }
-
+    a{
+        text-decoration: none;
+    }
     #kasse{
         text-align: left;
         .kasseikon{
