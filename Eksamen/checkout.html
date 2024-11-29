@@ -50,11 +50,11 @@
                                 Størrelse
                                 <select name="Størrelse" required>
                                     <option value="">Str</option>
-                                    <option value="XS">XS</option>
-                                    <option value="S">S</option>
-                                    <option value="M">M</option>
-                                    <option value="L">L</option>
-                                    <option value="XL">XL</option>
+                                    <option value="XS">38</option>
+                                    <option value="S">39</option>
+                                    <option value="M">40</option>
+                                    <option value="L">41</option>
+                                    <option value="XL">42</option>
                                 </select>
                             </form>
                         </li>
@@ -85,11 +85,11 @@
                                 Størrelse
                                 <select name="Størrelse" required>
                                     <option value="">Str</option>
-                                    <option value="XS">XS</option>
-                                    <option value="S">S</option>
-                                    <option value="M">M</option>
-                                    <option value="L">L</option>
-                                    <option value="XL">XL</option>
+                                    <option value="XS">38</option>
+                                    <option value="S">39</option>
+                                    <option value="M">40</option>
+                                    <option value="L">41</option>
+                                    <option value="XL">42</option>
                                 </select>
                             </form>
                         </li>
@@ -120,11 +120,11 @@
                                 Størrelse
                                 <select name="Størrelse" required>
                                     <option value="">Str</option>
-                                    <option value="XS">XS</option>
-                                    <option value="S">S</option>
-                                    <option value="M">M</option>
-                                    <option value="L">L</option>
-                                    <option value="XL">XL</option>
+                                    <option value="XS">38</option>
+                                    <option value="S">39</option>
+                                    <option value="M">40</option>
+                                    <option value="L">41</option>
+                                    <option value="XL">42</option>
                                 </select>
                             </form>
                         </li>
@@ -161,11 +161,11 @@
                         </label>
                         <label id="adresse">
                             Adresse:
-                            <input type="text" name="adresse" placeholder="B R A veien 4" maxlength="40" required pattern="[A-Za-zæøåÆØÅ ]{2,}[0-9]">
+                            <input type="text" name="adresse" placeholder="B R A veien 4" maxlength="40" required pattern="[A-Za-zæøåÆØÅ ]{2,}[0-9]+">
                         </label>
                         <label id="postnummer">
                             Postnummer:
-                            <input type="number" name="postnummer" placeholder="1757" min="0000" max="9999" required>
+                            <input type="number" name="postnummer" placeholder="1757" min="1111" max="9999" required>
                         </label>
                         <label id="poststed">
                             Poststed:
@@ -178,7 +178,7 @@
                     
                         <label id="epost">
                             E-post:
-                            <input type="email" name="epost" placeholder="eksempel@hiof.no" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$">
+                            <input type="email" name="epost" placeholder="eksempel@hiof.no" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
                         </label>
                         <label id="telefon">
                             Telefonnummer:
@@ -261,7 +261,7 @@
                     <form class="opplysninger">
                         <label id="kort">
                             Kortnummer:
-                            <input type="number" name="kortnummer" placeholder="****************" min="0000000000000000" max="9999999999999999" required>
+                            <input type="number" name="kortnummer" placeholder="****************" min="1111111111111111" max="9999999999999999" required>
                         </label>
                         <label id="utløpsdato"> 
                             Utløpsdato:
@@ -269,7 +269,7 @@
                         </label>
                         <label id="cvc">
                             CVC/CVV:
-                            <input type="number" name="CVC/CVV" placeholder="***" min="000" max="999" required>
+                            <input type="number" name="CVC/CVV" placeholder="***" min="111" max="999" required>
                         </label>
                     <ul id="sluttsum">
                         <li><h4 id="ogbetale">Å betale inkl. mva</h4></li>
